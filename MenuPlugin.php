@@ -3,7 +3,7 @@
 namespace Craft;
 
 /**
- * Loohuis Menu Plugin.
+ * Menu Plugin.
  *
  * @author    Bob Olde Hampsink <b.oldehampsink@nerds.company>
  * @copyright Copyright (c) 2017, Nerds & Company

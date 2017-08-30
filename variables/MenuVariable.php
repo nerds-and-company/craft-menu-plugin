@@ -3,7 +3,7 @@
 namespace Craft;
 
 /**
- * Loohuis Menu Variable.
+ * Menu Variable.
  *
  * @author    Bob Olde Hampsink <b.oldehampsink@nerds.company>
  * @copyright Copyright (c) 2017, Nerds & Company
