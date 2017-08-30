@@ -1,0 +1,22 @@
+{
+    "name": "nerds-and-company/craft-menu-plugin",
+    "description": "Helpers for a static menu with dynamic titles",
+    "authors": [
+        {
+             "name": "Bob Olde Hampsink",
+             "email": "b.oldehampsink@nerds.company",
+             "homepage": "http://www.nerds.company",
+             "role": "Developer"
+         },
+        {
+            "name": "Bart van Gennep",
+            "email": "b.vangennep@nerds.company",
+            "homepage": "http://www.nerds.company",
+            "role": "Developer"
+        }
+    ],
+    "type": "craft-plugin",
+    "require": {
+        "php": ">=5.5"
+    }
+}
