@@ -1,6 +1,7 @@
 {
     "name": "nerds-and-company/craft-menu-plugin",
     "description": "Helpers for a static menu with dynamic titles",
+    "license": "MIT",
     "authors": [
         {
              "name": "Bob Olde Hampsink",
