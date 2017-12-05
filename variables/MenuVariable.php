@@ -73,7 +73,7 @@ class MenuVariable
         $path = craft()->request->path;
         $uri = $this->get($handle)->uri;
 
-        return $uri == '/' ? empty($path) : strpos('/'.$path, '/'.$uri) !== false;
+        return $uri == '/' ? empty($path) : strpos('/'.$path, '/'.$uri) === 0;
     }
 
     /**
