@@ -21,11 +21,17 @@ class MenuVariable
     private $breadcrumbs = array();
 
     /**
+     * @var string
+     */
+    private $path = '';
+
+    /**
      * Constructor.
      */
     public function __construct()
     {
         if (craft()->request->isSiteRequest()) {
+            $this->path = strtolower(craft()->request->path);
             $singles = $this->getSingleDataByLocale();
             foreach ($singles as $single) {
                 if ($single['uri'] == '__home__') {
@@ -70,7 +76,7 @@ class MenuVariable
      */
     public function isActive($handle)
     {
-        $path = craft()->request->path;
+        $path = $this->path;
         $uri = $this->get($handle)->uri;
 
         return $uri == '/' ? empty($path) : strpos('/'.$path, '/'.$uri) === 0;
@@ -118,7 +124,7 @@ class MenuVariable
      */
     private function getSinglesBreadcrumbs()
     {
-        $slugs = explode('/', craft()->request->path);
+        $slugs = explode('/', $this->path);
 
         for ($i = 1; $i <= count($slugs); ++$i) {
             $slug = implode('/', array_slice($slugs, 0, $i));

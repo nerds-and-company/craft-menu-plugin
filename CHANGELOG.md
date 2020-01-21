@@ -1,3 +1,9 @@
+# Changelog
+
+## 1.1.0
+
+* Made breadcrumbs case insensitive
+
 ## 1.0.1 (2017-12-05)
 
 * More exact active match
